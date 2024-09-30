@@ -1,54 +1,54 @@
 package com.example.csvtodb;
 
 public class FinancialDetails {
-    private Double boxPsf;
-    private Double agreementValue;
-    private Double stampDuty;
-    private Double gst;
-    private Double registration;
-    private Double totalTaxes;
-    private Double billedToDeveloper;
-    private Double gmvAllInGovtTaxesCharges;
+    private long boxPsf;
+    private long agreementValue;
+    private long stampDuty;
+    private long gst;
+    private long registration;
+    private long totalTaxes;
+    private long billedToDeveloper;
+    private long gmvAllInGovtTaxesCharges;
     private String brokerageApplicable;
-    private Double brokerageKicker;
+    private long brokerageKicker;
     private Double grossBloxRevenue;
-    private Double passbackGiven;
+    private long passbackGiven;
     private Double bloxNetRevenue;
-    private Double at1Percent;
-    private Double paymentRecd;
-    private Double payRecdPercent;
+    private long at1Percent;
+    private long paymentRecd;
+    private long payRecdPercent;
 
     // Getters and Setters
-    public Double getBoxPsf() { return boxPsf; }
-    public void setBoxPsf(Double boxPsf) { this.boxPsf = boxPsf; }
-    public Double getAgreementValue() { return agreementValue; }
-    public void setAgreementValue(Double agreementValue) { this.agreementValue = agreementValue; }
-    public Double getStampDuty() { return stampDuty; }
-    public void setStampDuty(Double stampDuty) { this.stampDuty = stampDuty; }
-    public Double getGst() { return gst; }
-    public void setGst(Double gst) { this.gst = gst; }
-    public Double getRegistration() { return registration; }
-    public void setRegistration(Double registration) { this.registration = registration; }
-    public Double getTotalTaxes() { return totalTaxes; }
-    public void setTotalTaxes(Double totalTaxes) { this.totalTaxes = totalTaxes; }
-    public Double getBilledToDeveloper() { return billedToDeveloper; }
-    public void setBilledToDeveloper(Double billedToDeveloper) { this.billedToDeveloper = billedToDeveloper; }
-    public Double getGmvAllInGovtTaxesCharges() { return gmvAllInGovtTaxesCharges; }
-    public void setGmvAllInGovtTaxesCharges(Double gmvAllInGovtTaxesCharges) { this.gmvAllInGovtTaxesCharges = gmvAllInGovtTaxesCharges; }
+    public long getBoxPsf() { return boxPsf; }
+    public void setBoxPsf(long boxPsf) { this.boxPsf = boxPsf; }
+    public long getAgreementValue() { return agreementValue; }
+    public void setAgreementValue(long agreementValue) { this.agreementValue = agreementValue; }
+    public long getStampDuty() { return stampDuty; }
+    public void setStampDuty(long stampDuty) { this.stampDuty = stampDuty; }
+    public long getGst() { return gst; }
+    public void setGst(long gst) { this.gst = gst; }
+    public long getRegistration() { return registration; }
+    public void setRegistration(long registration) { this.registration = registration; }
+    public long getTotalTaxes() { return totalTaxes; }
+    public void setTotalTaxes(long totalTaxes) { this.totalTaxes = totalTaxes; }
+    public long getBilledToDeveloper() { return billedToDeveloper; }
+    public void setBilledToDeveloper(long billedToDeveloper) { this.billedToDeveloper = billedToDeveloper; }
+    public long getGmvAllInGovtTaxesCharges() { return gmvAllInGovtTaxesCharges; }
+    public void setGmvAllInGovtTaxesCharges(long gmvAllInGovtTaxesCharges) { this.gmvAllInGovtTaxesCharges = gmvAllInGovtTaxesCharges; }
     public String getBrokerageApplicable() { return brokerageApplicable; }
     public void setBrokerageApplicable(String brokerageApplicable) { this.brokerageApplicable = brokerageApplicable; }
-    public Double getBrokerageKicker() { return brokerageKicker; }
-    public void setBrokerageKicker(Double brokerageKicker) { this.brokerageKicker = brokerageKicker; }
+    public long getBrokerageKicker() { return brokerageKicker; }
+    public void setBrokerageKicker(long brokerageKicker) { this.brokerageKicker = brokerageKicker; }
     public Double getGrossBloxRevenue() { return grossBloxRevenue; }
     public void setGrossBloxRevenue(Double grossBloxRevenue) { this.grossBloxRevenue = grossBloxRevenue; }
-    public Double getPassbackGiven() { return passbackGiven; }
-    public void setPassbackGiven(Double passbackGiven) { this.passbackGiven = passbackGiven; }
+    public long getPassbackGiven() { return passbackGiven; }
+    public void setPassbackGiven(long passbackGiven) { this.passbackGiven = passbackGiven; }
     public Double getBloxNetRevenue() { return bloxNetRevenue; }
     public void setBloxNetRevenue(Double bloxNetRevenue) { this.bloxNetRevenue = bloxNetRevenue; }
-    public Double getAt1Percent() { return at1Percent; }
-    public void setAt1Percent(Double at1Percent) { this.at1Percent = at1Percent; }
-    public Double getPaymentRecd() { return paymentRecd; }
-    public void setPaymentRecd(Double paymentRecd) { this.paymentRecd = paymentRecd; }
-    public Double getPayRecdPercent() { return payRecdPercent; }
-    public void setPayRecdPercent(Double payRecdPercent) { this.payRecdPercent = payRecdPercent; }
+    public long getAt1Percent() { return at1Percent; }
+    public void setAt1Percent(long at1Percent) { this.at1Percent = at1Percent; }
+    public long getPaymentRecd() { return paymentRecd; }
+    public void setPaymentRecd(long paymentRecd) { this.paymentRecd = paymentRecd; }
+    public long getPayRecdPercent() { return payRecdPercent; }
+    public void setPayRecdPercent(long payRecdPercent) { this.payRecdPercent = payRecdPercent; }
 }

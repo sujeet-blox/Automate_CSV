@@ -1,25 +1,25 @@
 package com.example.csvtodb;
 
 public class FinanceApproval {
-    private Double homeFinanceApprovedValue;
+    private long homeFinanceApprovedValue;
     private String banksName;
     private String homeLoanFinanceStatus;
-    private Double accrued;
+    private long accrued;
 
     public FinanceApproval() {}
 
-    public FinanceApproval(Double homeFinanceApprovedValue, String banksName, String homeLoanFinanceStatus, Double accrued) {
+    public FinanceApproval(long homeFinanceApprovedValue, String banksName, String homeLoanFinanceStatus, long accrued) {
         this.homeFinanceApprovedValue = homeFinanceApprovedValue;
         this.banksName = banksName;
         this.homeLoanFinanceStatus = homeLoanFinanceStatus;
         this.accrued = accrued;
     }
 
-    public Double getHomeFinanceApprovedValue() {
+    public long getHomeFinanceApprovedValue() {
         return homeFinanceApprovedValue;
     }
 
-    public void setHomeFinanceApprovedValue(Double homeFinanceApprovedValue) {
+    public void setHomeFinanceApprovedValue(long homeFinanceApprovedValue) {
         this.homeFinanceApprovedValue = homeFinanceApprovedValue;
     }
 
@@ -39,11 +39,11 @@ public class FinanceApproval {
         this.homeLoanFinanceStatus = homeLoanFinanceStatus;
     }
 
-    public Double getAccrued() {
+    public long getAccrued() {
         return accrued;
     }
 
-    public void setAccrued(Double accrued) {
+    public void setAccrued(long accrued) {
         this.accrued = accrued;
     }
 }

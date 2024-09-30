@@ -7,13 +7,12 @@ public class BookingInfo {
     private String developersName;
     private String projectName;
     private String unit;
-    private Double carpetArea;
+    private long carpetArea;
     private String wingTower;
     private String seriesNo;
     private String dateOfVisitRevisit;
     private String dateOfBooking;
     private String carParking;
-
 
     public Integer getSrNo() { return srNo; }
     public void setSrNo(Integer srNo) { this.srNo = srNo; }
@@ -27,8 +26,8 @@ public class BookingInfo {
     public void setProjectName(String projectName) { this.projectName = projectName; }
     public String getUnit() { return unit; }
     public void setUnit(String unit) { this.unit = unit; }
-    public Double getCarpetArea() { return carpetArea; }
-    public void setCarpetArea(Double carpetArea) { this.carpetArea = carpetArea; }
+    public long getCarpetArea() { return carpetArea; }
+    public void setCarpetArea(long carpetArea) { this.carpetArea = carpetArea; }
     public String getWingTower() { return wingTower; }
     public void setWingTower(String wingTower) { this.wingTower = wingTower; }
     public String getSeriesNo() { return seriesNo; }

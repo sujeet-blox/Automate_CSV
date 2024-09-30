@@ -1,11 +1,11 @@
 package com.example.csvtodb;
 
 public class PaymentDetails {
-    private Double receivedAmount;
+    private long receivedAmount;
     private String actualPaymentReceivedDate;
     private String monthOfReceivedPayment;
     private String paymentReferenceId;
-    private Double valueOfReferenceId;
+    private long valueOfReferenceId;
     private Integer ageingDaysFromBookedToBilled;
     private Integer ageingTentativePaymentDaysFromBillSubmission;
     private Integer noOfDaysLeftToExpectPayment;
@@ -13,7 +13,7 @@ public class PaymentDetails {
 
     public PaymentDetails() {}
 
-    public PaymentDetails(Double receivedAmount, String actualPaymentReceivedDate, String monthOfReceivedPayment, String paymentReferenceId, Double valueOfReferenceId, Integer ageingDaysFromBookedToBilled, Integer ageingTentativePaymentDaysFromBillSubmission, Integer noOfDaysLeftToExpectPayment, Integer ageingDaysFromBilledToReceived) {
+    public PaymentDetails(long receivedAmount, String actualPaymentReceivedDate, String monthOfReceivedPayment, String paymentReferenceId, long valueOfReferenceId, Integer ageingDaysFromBookedToBilled, Integer ageingTentativePaymentDaysFromBillSubmission, Integer noOfDaysLeftToExpectPayment, Integer ageingDaysFromBilledToReceived) {
         this.receivedAmount = receivedAmount;
         this.actualPaymentReceivedDate = actualPaymentReceivedDate;
         this.monthOfReceivedPayment = monthOfReceivedPayment;
@@ -25,11 +25,11 @@ public class PaymentDetails {
         this.ageingDaysFromBilledToReceived = ageingDaysFromBilledToReceived;
     }
 
-    public Double getReceivedAmount() {
+    public long getReceivedAmount() {
         return receivedAmount;
     }
 
-    public void setReceivedAmount(Double receivedAmount) {
+    public void setReceivedAmount(long receivedAmount) {
         this.receivedAmount = receivedAmount;
     }
 
@@ -57,11 +57,11 @@ public class PaymentDetails {
         this.paymentReferenceId = paymentReferenceId;
     }
 
-    public Double getValueOfReferenceId() {
+    public long getValueOfReferenceId() {
         return valueOfReferenceId;
     }
 
-    public void setValueOfReferenceId(Double valueOfReferenceId) {
+    public void setValueOfReferenceId(long valueOfReferenceId) {
         this.valueOfReferenceId = valueOfReferenceId;
     }
 

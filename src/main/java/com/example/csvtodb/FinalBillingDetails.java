@@ -1,31 +1,31 @@
 package com.example.csvtodb;
 
 public class FinalBillingDetails {
-    private Double finalBilledToDeveloperValue;
-    private Double finalEarningToBlox;
+    private long finalBilledToDeveloperValue;
+    private double finalEarningToBlox;
     private String remarksForDifferenceValue;
 
     public FinalBillingDetails() {}
 
-    public FinalBillingDetails(Double finalBilledToDeveloperValue, Double finalEarningToBlox, String remarksForDifferenceValue) {
+    public FinalBillingDetails(long finalBilledToDeveloperValue, long finalEarningToBlox, String remarksForDifferenceValue) {
         this.finalBilledToDeveloperValue = finalBilledToDeveloperValue;
         this.finalEarningToBlox = finalEarningToBlox;
         this.remarksForDifferenceValue = remarksForDifferenceValue;
     }
 
-    public Double getFinalBilledToDeveloperValue() {
+    public long getFinalBilledToDeveloperValue() {
         return finalBilledToDeveloperValue;
     }
 
-    public void setFinalBilledToDeveloperValue(Double finalBilledToDeveloperValue) {
+    public void setFinalBilledToDeveloperValue(long finalBilledToDeveloperValue) {
         this.finalBilledToDeveloperValue = finalBilledToDeveloperValue;
     }
 
-    public Double getFinalEarningToBlox() {
+    public double getFinalEarningToBlox() {
         return finalEarningToBlox;
     }
 
-    public void setFinalEarningToBlox(Double finalEarningToBlox) {
+    public void setFinalEarningToBlox(double finalEarningToBlox) {
         this.finalEarningToBlox = finalEarningToBlox;
     }
 

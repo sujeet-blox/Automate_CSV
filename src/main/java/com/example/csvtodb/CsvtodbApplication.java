@@ -26,12 +26,12 @@ public class CsvtodbApplication implements CommandLineRunner {
 		SpringApplication.run(CsvtodbApplication.class, args);
 	}
 
-	@Override
+
 	public void run(String... args) throws Exception {
 		System.out.println("Application Started");
 
 		try {
-			List<JSONModel> models = convertCsvToModels("src/main/resources/csvfile.csv");
+			List<JSONModel> models = convertCsvToModels("src/main/resources/postsales.csv");
 			ObjectMapper objectMapper = new ObjectMapper();
 			String json = objectMapper.writeValueAsString(models);
 			System.out.println("Converted JSON:");
@@ -54,6 +54,7 @@ public class CsvtodbApplication implements CommandLineRunner {
 				.withIgnoreEmptyLines();
 
 		CSVParser csvParser;
+
 		try {
 			csvParser = new CSVParser(reader, format);
 		} catch (IllegalArgumentException e) {
@@ -67,6 +68,7 @@ public class CsvtodbApplication implements CommandLineRunner {
 
 		for (CSVRecord csvRecord : csvParser) {
 			JSONModel model = new JSONModel();
+
             model.setUniqueCode(csvRecord.get("Unique Code"));
 
 			// Map CSV data to BookingInfo
@@ -77,31 +79,31 @@ public class CsvtodbApplication implements CommandLineRunner {
 			bookingInfo.setDevelopersName(csvRecord.get("Developers Name"));
 			bookingInfo.setProjectName(csvRecord.get("Project / Unit Name"));
 			bookingInfo.setUnit(csvRecord.get("Unit"));
-			bookingInfo.setCarpetArea(parseDouble(csvRecord.get("Carpet Area")));
+			bookingInfo.setCarpetArea(ParseLong(csvRecord.get("Carpet Area")));
 			bookingInfo.setWingTower(csvRecord.get("Wing / Tower"));
 			bookingInfo.setSeriesNo(csvRecord.get("Series No"));
 			bookingInfo.setDateOfVisitRevisit(csvRecord.get("Date of Visit / Revisit"));
 			bookingInfo.setDateOfBooking(csvRecord.get("Date of Booking"));
-			bookingInfo.setCarParking(csvRecord.get("Car Parking (yes/No)"));
+			bookingInfo.setCarParking(csvRecord.get("Car Parking  (yes/No)"));
 
 			// Map CSV data to FinancialDetails
 			FinancialDetails financialDetails = new FinancialDetails();
-			financialDetails.setBoxPsf(parseDouble(csvRecord.get("Box psf")));
-			financialDetails.setAgreementValue(parseDouble(csvRecord.get("Agreement Value")));
-			financialDetails.setStampDuty(parseDouble(csvRecord.get("Stamp Duty")));
-			financialDetails.setGst(parseDouble(csvRecord.get("GST")));
-			financialDetails.setRegistration(parseDouble(csvRecord.get("Registration")));
-			financialDetails.setTotalTaxes(parseDouble(csvRecord.get("Total Taxes")));
-			financialDetails.setBilledToDeveloper(parseDouble(csvRecord.get("Billed To Developer")));
-			financialDetails.setGmvAllInGovtTaxesCharges(parseDouble(csvRecord.get("GMV ( All in - Govt Taxes & Charges )")));
+			financialDetails.setBoxPsf(ParseLong(csvRecord.get("Box psf")));
+			financialDetails.setAgreementValue(Long.parseLong(csvRecord.get("Agreement Value")));
+			financialDetails.setStampDuty(ParseLong(csvRecord.get("Stamp Duty")));
+			financialDetails.setGst(ParseLong(csvRecord.get("GST")));
+			financialDetails.setRegistration(ParseLong(csvRecord.get("Registration")));
+			financialDetails.setTotalTaxes(ParseLong(csvRecord.get("Total Taxes")));
+			financialDetails.setBilledToDeveloper(Long.parseLong(csvRecord.get("Billed To Developer")));
+			financialDetails.setGmvAllInGovtTaxesCharges(ParseLong(csvRecord.get("GMV ( All in - Govt Taxes & Charges )")));
 			financialDetails.setBrokerageApplicable(csvRecord.get("Brokerage Applicable"));
-			financialDetails.setBrokerageKicker(parseDouble(csvRecord.get("Brokerage Kicker")));
-			financialDetails.setGrossBloxRevenue(parseDouble(csvRecord.get("Gross Blox Revenue")));
-			financialDetails.setPassbackGiven(parseDouble(csvRecord.get("Passback Given")));
-			financialDetails.setBloxNetRevenue(parseDouble(csvRecord.get("Blox Net Revenue")));
-			financialDetails.setAt1Percent(parseDouble(csvRecord.get("@1%")));
-			financialDetails.setPaymentRecd(parseDouble(csvRecord.get("Payment Recd")));
-			financialDetails.setPayRecdPercent(parseDouble(csvRecord.get("Payment Recd")));
+			financialDetails.setBrokerageKicker(ParseLong(csvRecord.get("Brokerage Kicker")));
+			financialDetails.setGrossBloxRevenue(Double.parseDouble(csvRecord.get("Gross Blox Revenue")));
+			financialDetails.setPassbackGiven(ParseLong(csvRecord.get("Passback Given")));
+			financialDetails.setBloxNetRevenue(Double.parseDouble(csvRecord.get("Blox Net Revenue")));
+			financialDetails.setAt1Percent(ParseLong(csvRecord.get("@1%")));
+			financialDetails.setPaymentRecd(ParseLong(csvRecord.get("Payment Recd")));
+			financialDetails.setPayRecdPercent(ParseLong(csvRecord.get("Payment Recd")));
 
 			// Map CSV data to AgreementDetails
 			AgreementDetails agreementDetails = new AgreementDetails();
@@ -131,15 +133,15 @@ public class CsvtodbApplication implements CommandLineRunner {
 
 //			// Map CSV data to FinanceApproval
 			FinanceApproval financeApproval = new FinanceApproval();
-			financeApproval.setHomeFinanceApprovedValue(parseDouble(csvRecord.get("Home Finance Approved Value")));
+			financeApproval.setHomeFinanceApprovedValue(ParseLong(csvRecord.get("Home Finance Approved Value")));
 			financeApproval.setBanksName(csvRecord.get("Bank's Name"));
 			financeApproval.setHomeLoanFinanceStatus(csvRecord.get("Home Loan Finance Status"));
-			financeApproval.setAccrued(parseDouble(csvRecord.get("Accrued")));
+			financeApproval.setAccrued(ParseLong(csvRecord.get("Accrued")));
 //
 //			// Map CSV data to FinalBillingDetails
 			FinalBillingDetails finalBillingDetails = new FinalBillingDetails();
-			finalBillingDetails.setFinalBilledToDeveloperValue(parseDouble(csvRecord.get("Final Billed to Developer Value ( As verifed by Collections )")));
-			finalBillingDetails.setFinalEarningToBlox(parseDouble(csvRecord.get("Final Earning To Blox")));
+			finalBillingDetails.setFinalBilledToDeveloperValue(Long.parseLong(csvRecord.get("Final Billed to Developer Value ( As verifed by Collections )")));
+			finalBillingDetails.setFinalEarningToBlox(Double.parseDouble(csvRecord.get("Final Earning To Blox")));
 			finalBillingDetails.setRemarksForDifferenceValue(csvRecord.get("Remarks For Difference Value"));
 
 //			// Map CSV data to BillingFollowUp
@@ -160,11 +162,11 @@ public class CsvtodbApplication implements CommandLineRunner {
 //
 //			// Map CSV data to PaymentDetails
 			PaymentDetails paymentDetails = new PaymentDetails();
-			paymentDetails.setReceivedAmount(parseDouble(csvRecord.get("Recieved amount")));
+			paymentDetails.setReceivedAmount(ParseLong(csvRecord.get("Recieved amount")));
 			paymentDetails.setActualPaymentReceivedDate(csvRecord.get("Actual Payment Received Date"));
 			paymentDetails.setMonthOfReceivedPayment(csvRecord.get("Month of Received Payment"));
 			paymentDetails.setPaymentReferenceId(csvRecord.get("Payment Reference ID"));
-			paymentDetails.setValueOfReferenceId(parseDouble(csvRecord.get("Value of Reference ID [Collection Team to only Fill this]")));
+			paymentDetails.setValueOfReferenceId(ParseLong(csvRecord.get("Value of Reference ID [Collection Team to  only Fill this]")));
 			paymentDetails.setAgeingDaysFromBookedToBilled(parseInteger(csvRecord.get("Ageing ( Days from Booked to Billed )")));
 			paymentDetails.setAgeingTentativePaymentDaysFromBillSubmission(parseInteger(csvRecord.get("Ageing ( Tentative Payment Days from Bill Submission )")));
 			paymentDetails.setNoOfDaysLeftToExpectPayment(parseInteger(csvRecord.get("No of Days Left to expect the payment")));
@@ -200,12 +202,16 @@ public class CsvtodbApplication implements CommandLineRunner {
 		return models;
 	}
 
-	private static Double parseDouble(String value) {
+	private static long ParseLong(String value) {
 		try {
-			return value != null && !value.trim().isEmpty() ? Double.parseDouble(value.trim()) : null;
+			if (value != null && !value.trim().isEmpty()) {
+				return Long.parseLong(value.trim());
+			}
 		} catch (NumberFormatException e) {
-			return null;
+			// Log the exception if necessary
+			System.err.println("Invalid number format for value: " + value + ". Returning default value: 0");
 		}
+		return 0L;
 	}
 
 	private static Integer parseInteger(String value) {

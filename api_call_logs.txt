@@ -1,0 +1,78 @@
+2024-09-30T14:52:35.660866671: Error retrieving enquiry data: Incorrect result size: expected 1, actual 0
+2024-09-30T14:52:35.707847799: Starting API sequence for RM ID: null, Enquiry ID: E463031664085259
+2024-09-30T14:52:35.735933216: Mobile number not found for RM ID: null
+2024-09-30T14:52:35.736047501: Failed to obtain token for RM ID: null
+2024-09-30T14:52:35.771297622: Failed to find projectID
+2024-09-30T14:52:35.805409827: Starting API sequence for RM ID: null, Enquiry ID: E468051664282400
+2024-09-30T14:52:35.844640587: Mobile number not found for RM ID: null
+2024-09-30T14:52:35.844823953: Failed to obtain token for RM ID: null
+2024-09-30T14:52:35.877085777: Failed to find projectID
+2024-09-30T14:52:35.912822065: Starting API sequence for RM ID: null, Enquiry ID: E134311656395594
+2024-09-30T14:52:35.943678538: Mobile number not found for RM ID: null
+2024-09-30T14:52:35.943845102: Failed to obtain token for RM ID: null
+2024-09-30T14:52:35.975966542: Failed to find projectID
+2024-09-30T14:52:36.005225772: Starting API sequence for RM ID: null, Enquiry ID: E468051664282400
+2024-09-30T14:52:36.031524708: Mobile number not found for RM ID: null
+2024-09-30T14:52:36.031757286: Failed to obtain token for RM ID: null
+2024-09-30T14:52:36.063348986: Starting API sequence for RM ID: 177, Enquiry ID: E31881654081041
+2024-09-30T14:52:39.745361057: Obtained JWT token for Enquiry ID: E31881654081041
+2024-09-30T14:52:39.824092748: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:39.910807015: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:39.911160662: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:40.007374287: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:40.093022302: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:40.171519879: Completed API sequence successfully for RM ID: 177, Enquiry ID: E31881654081041
+2024-09-30T14:52:40.229150108: Starting API sequence for RM ID: 1745, Enquiry ID: E134421656396836
+2024-09-30T14:52:42.565708466: Obtained JWT token for Enquiry ID: E134421656396836
+2024-09-30T14:52:42.624513439: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:42.690321699: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:42.691002954: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:42.763453552: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:42.824764290: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:42.887032243: Completed API sequence successfully for RM ID: 1745, Enquiry ID: E134421656396836
+2024-09-30T14:52:42.948056150: Starting API sequence for RM ID: 59, Enquiry ID: E62371654608121
+2024-09-30T14:52:45.323647965: Obtained JWT token for Enquiry ID: E62371654608121
+2024-09-30T14:52:45.407196699: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:45.499735269: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:45.500629756: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:45.566167782: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:45.645260292: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:45.709508595: Completed API sequence successfully for RM ID: 59, Enquiry ID: E62371654608121
+2024-09-30T14:52:45.766761596: Failed to find projectID
+2024-09-30T14:52:45.801015820: Failed to find projectID
+2024-09-30T14:52:45.831483413: Failed to find projectID
+2024-09-30T14:52:45.862366319: Starting API sequence for RM ID: 114, Enquiry ID: E35531654081054
+2024-09-30T14:52:48.379909891: Obtained JWT token for Enquiry ID: E35531654081054
+2024-09-30T14:52:48.442207431: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:48.529224581: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:48.529672817: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:48.593596744: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:48.655332986: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:48.713189700: Completed API sequence successfully for RM ID: 114, Enquiry ID: E35531654081054
+2024-09-30T14:52:48.770329142: Starting API sequence for RM ID: 179, Enquiry ID: E56731654608093
+2024-09-30T14:52:51.292057958: Obtained JWT token for Enquiry ID: E56731654608093
+2024-09-30T14:52:51.357117222: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:51.425310326: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:51.425749504: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:51.490208236: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:51.548709803: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:51.609867027: Completed API sequence successfully for RM ID: 179, Enquiry ID: E56731654608093
+2024-09-30T14:52:51.667226421: Starting API sequence for RM ID: null, Enquiry ID: E49471654580467
+2024-09-30T14:52:51.693715005: Mobile number not found for RM ID: null
+2024-09-30T14:52:51.693887390: Failed to obtain token for RM ID: null
+2024-09-30T14:52:51.724104736: Starting API sequence for RM ID: 1452, Enquiry ID: E38841654081066
+2024-09-30T14:52:54.109799794: Obtained JWT token for Enquiry ID: E38841654081066
+2024-09-30T14:52:54.171018711: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:54.234746299: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:54.235181219: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:54.297863437: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:54.353462936: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:54.411698958: Completed API sequence successfully for RM ID: 1452, Enquiry ID: E38841654081066
+2024-09-30T14:52:54.464673218: Starting API sequence for RM ID: 1452, Enquiry ID: E38841654081066
+2024-09-30T14:52:56.624806758: Obtained JWT token for Enquiry ID: E38841654081066
+2024-09-30T14:52:56.688727587: Error during createCostSheet request: Create cost sheet failed with status: 403 FORBIDDEN
+2024-09-30T14:52:56.774891913: Error creating booking: Booking already exists for the selected unit in the given tower and project
+2024-09-30T14:52:56.775566555: Error during createBooking request: The mapper [com.example.csvtodb.ApiService$$Lambda/0x00007fbba4933848] returned a null value.
+2024-09-30T14:52:56.834679909: Error updating booking: Booking Fallback response due to error not found. Provide a valid booking ID
+2024-09-30T14:52:56.892731671: Error during addCustomer request: Add customer failed with status: 400 BAD_REQUEST
+2024-09-30T14:52:56.954962644: Completed API sequence successfully for RM ID: 1452, Enquiry ID: E38841654081066
